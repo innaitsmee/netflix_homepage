@@ -1,0 +1,13 @@
+:root {
+  --color-primary-white: rgba(255, 255, 255);
+  --color-primary-gray: rgba(167, 166, 166);
+  --color-secondary-light: rgba(200, 200, 200);
+  --color-secondary-gray: rgba(255, 255, 255, 0.49);
+  --color-brand-red: rgba(212, 13, 31);
+  --border-white: 3px solid rgba(255, 255, 255);
+  --color-rating-gold: rgba(255, 234, 43);
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

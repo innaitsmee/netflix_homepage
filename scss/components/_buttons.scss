@@ -1,0 +1,25 @@
+.button {
+  width: 100%;
+  max-width: 272px;
+  padding: 10px;
+  color: var(--color-primary-white);
+  border: var(--border-white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  line-height: 1.4;
+  gap: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 50%;
+  }
+
+  &:hover {
+    background-color: var(--color-brand-red);
+    border-color: var(--color-brand-red);
+  }
+}

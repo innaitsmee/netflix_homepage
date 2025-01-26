@@ -1,0 +1,37 @@
+.hero-section {
+  /*height: 100vh; */
+  min-height: 100%;
+  background-color: rgb(64, 64, 112);
+  background-image: url(../../images/hero-bg-mob.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 0 48px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/hero-bg-mob@2x.webp);
+  }
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../../images/hero-bg.webp);
+    background-position-x: 65%;
+    padding-top: 214px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/hero-bg@2x.webp);
+    }
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 234px;
+    background-position-x: center;
+  }
+
+  &__container {
+    position: relative;
+  }
+}

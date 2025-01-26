@@ -1,0 +1,38 @@
+@font-face {
+  font-display: swap;
+  font-family: "Kyiv Type Titling";
+  font-style: "medium";
+  font-weight: 500;
+  src: url("../fonts/KyivTypeTitling-Medium.woff2") format("woff2"),
+    url("../fonts/KyivTypeTitling-Medium.woff") format("woff");
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v18-latin-regular.woff2") format("woff2"),
+    url("../fonts/inter-v18-latin-regular.woff") format("woff");
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v18-latin-500.woff2") format("woff2"),
+    url("../fonts/inter-v18-latin-500.woff") format("woff");
+}
+
+/* inter-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inter-v18-latin-800.woff2") format("woff2"),
+    url("../fonts/inter-v18-latin-800.woff") format("woff");
+}

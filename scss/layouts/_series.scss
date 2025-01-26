@@ -1,0 +1,145 @@
+.series {
+  margin-bottom: 54px;
+
+  &__container {
+    max-width: 864px;
+    margin-bottom: 54px;
+  }
+
+  &__genre {
+    font-size: 24px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 32px;
+    }
+  }
+
+  &__genre,
+  &__spec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    line-height: 1.2;
+
+    @media screen and (min-width: $bp-mobile) {
+      line-height: 1;
+    }
+  }
+
+  &__genre > :not(:last-child) {
+    padding-right: 18px;
+    border-right: var(--border-white);
+  }
+
+  &__spec {
+    margin-bottom: 24px;
+  }
+
+  &__spec > p {
+    margin-bottom: 0;
+  }
+
+  &__spec > :not(:last-child) {
+    padding-right: 18px;
+    position: relative;
+  }
+
+  &__spec > :not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    height: 75%;
+    border-right: var(--border-white);
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 48px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
+  }
+
+  &__spec {
+    font-size: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 30px;
+    }
+
+    &--grey {
+      font-weight: 400;
+      color: var(--color-primary-gray);
+
+      @media screen and (min-width: $bp-tablet) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.4;
+    color: var(--color-primary-gray);
+  }
+
+  &__rating {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__age {
+    &--mob {
+      @media screen and (min-width: 1279px) {
+        display: none;
+      }
+    }
+
+    &--desk {
+      width: 174px;
+      background-color: var(--color-secondary-gray);
+      border-left: 32px solid var(--color-brand-red);
+      padding: 15px 15px 15px 28px;
+      font-size: 24px;
+      line-height: 1.4;
+      color: var(--color-primary-white);
+      position: absolute;
+      right: 0;
+      bottom: 12%;
+
+      @media screen and (max-width: 1279px) {
+        display: none;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-mobile) {
+      font-size: 30px;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 580px;
+      justify-content: space-between;
+    }
+  }
+}
+
+.gold {
+  fill: var(--color-rating-gold);
+}
